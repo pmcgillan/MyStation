@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  
+  <style type="text/css">
+.initial2{font-weight:bold;background-color:#6699FF}
+.legbutton { font-weight:bold;background-color:#6699FF;width: 10em; }
+.auxbutton { font-weight:bold;background-color:#FFFFFF;width: 10em; }
+.etcbutton { font-weight:bold;background-color:#32CD32;width: 10em; }
+  </style>
+  
+  <script type="text/javascript">
+<!--
+/***********************************************
+* Rollover background-color button Script- © Dynamic Drive (www.dynamicdrive.com)
+* This notice must stay intact for use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+//Specify optional button target: "_new" for new window, or name of FRAME target (ie "myframe")
+var buttontarget=""
+function change(e, color){
+var el=window.event? event.srcElement: e.target
+if (el.tagName=="INPUT"&&el.type=="button")
+el.style.backgroundColor=color
+}
+function jumpto2(url){
+if (buttontarget=="")
+parent.Content.location.href=url
+else if (buttontarget=="_new")
+window.open(url)
+else
+parent[buttontarget].location=url
+}
+//-->
+  </script>
+</head><body>
+<form onmouseover="change(event, '#99FFFF')" onmouseout="change(event, '#6699FF')">
+  <input value="Home" class="legbutton" onclick="jumpto2('Home.html')" type="button"><br>
+  <input value="About Us" class="legbutton" onclick="jumpto2('About.html')" type="button"><br>
+  <input value="Membership" class="legbutton" onclick="jumpto2('Membership.html')" type="button"><br>
+  <input value="Events" class="legbutton" onclick="jumpto2('Events.html')" type="button"><br>
+  <input value="Newsletter" class="legbutton" onclick="jumpto2('News.html')" type="button"><br>
+  <input value="Minutes" class="legbutton" onclick="jumpto2('Minutes.html')" type="button"><br>
+  <input value="Officers" class="legbutton" onclick="jumpto2('Officer.html')" type="button"><br>
+</form>
+
+<form onmouseover="change(event, '#99FFFF')" onmouseout="change(event, '#FFFFFF')">
+  <input value="Auxiliary" class="auxbutton" onclick="jumpto2('Auxil.html')" type="button"><br>
+  <input value="Officers" class="auxbutton" onclick="jumpto2(' AuxOfficer.html')" type="button"><br>
+  <input value="Membership" class="auxbutton" onclick="jumpto2('AuxMembership.html')" type="button"><br>
+  <input value="Events" class="auxbutton" onclick="jumpto2('AuxEvents.html')" type="button"><br>
+  <input value="Newsletter" class="auxbutton" onclick="jumpto2('AuxNews.html')" type="button"><br>
+</form>
+
+<form onmouseover="change(event, '#99FFFF')" onmouseout="change(event, '#32CD32')">
+  <input value="Comments" class="etcbutton" onclick="jumpto2('Guest.html')" type="button"><br>
+  <input value="Hall Rental" class="etcbutton" onclick="jumpto2('Rental.html')" type="button"><br>
+  <input value="Links" class="etcbutton" onclick="jumpto2('Links.html')" type="button"><br>
+  <input value="Iowa Legion" class="etcbutton" onclick="jumpto2('http://www.ialegion.org/')" type="button"><br>
+  <input value="National Legion" class="etcbutton" onclick="jumpto2('http://www.legion.org')" type="button"><br>
+  <br>
+</form>
+
+<img src="Images/powmia.gif">
+<br>
+
+<img src="/cgi-bin/Counter"> Viewers<br>
+
+<br>
+
+</body></html>
